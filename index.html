@@ -16,19 +16,88 @@
   </head>
   <body>
     <header class="header">
-      <!-- Header content stays the same -->
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg" alt="Menu">
+        <img class="site-logo" src="icons/library.svg" alt="Logo">
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Diyet Planları Ara">
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg" alt="Search">
+        </button>
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg" alt="Voice Search">
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg" alt="Create">
+          <div class="tooltip">Yeni Yazı</div>
+        </div>
+        <div class="youtube-apps-icon-container">
+          <img class="youtube-apps-icon" src="icons/apps.svg" alt="Apps">
+          <div class="tooltip">Diyetisyen Uygulamaları</div>
+        </div>
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg" alt="Notifications">
+          <div class="tooltip">Bildirimler</div>
+        </div>
+        <img class="current-user-picture" src="profile-pictures/my-profile.jpg" alt="Profile">
+      </div>
     </header>
 
     <nav class="sidebar">
-      <!-- Sidebar content stays the same -->
+      <div class="sidebar-link">
+        <img src="icons/home.svg" alt="Home">
+        <div>Anasayfa</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/diet-plans.svg" alt="Diet Plans">
+        <div>Diyet Planları</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/blog.svg" alt="Blog">
+        <div>Blog</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/services.svg" alt="Services">
+        <div>Hizmetler</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/contact.svg" alt="Contact">
+        <div>İletişim</div>
+      </div>
     </nav>
 
     <main>
       <section class="blog-posts">
-        <!-- Blog posts stay the same -->
+        <div class="post-preview">
+          <img class="post-thumbnail" src="thumbnails/healthy-food.jpg" alt="Healthy Food">
+          <div class="post-info">
+            <h2 class="post-title">Sağlıklı Beslenme İpuçları</h2>
+            <p class="post-excerpt">Sağlıklı bir yaşam için bilmeniz gereken en iyi 10 beslenme ipucu...</p>
+          </div>
+        </div>
+
+        <div class="post-preview">
+          <img class="post-thumbnail" src="thumbnails/weight-loss.jpg" alt="Weight Loss">
+          <div class="post-info">
+            <h2 class="post-title">Kilo Verme Stratejileri</h2>
+            <p class="post-excerpt">Bu stratejilerle kilo verme yolculuğunuza rehberlik edin...</p>
+          </div>
+        </div>
+
+        <div class="post-preview">
+          <img class="post-thumbnail" src="thumbnails/meal-plan.jpg" alt="Meal Plan">
+          <div class="post-info">
+            <h2 class="post-title">Diyetisyen Onaylı Yemek Planları</h2>
+            <p class="post-excerpt">Sağlıklı yemek planları oluşturma rehberi...</p>
+          </div>
+        </div>
       </section>
 
-      <section class="calendar-news-section">
+      <!-- Takvim ve Haberler Bölümü -->
+      <section class="additional-content">
         <!-- Sol taraf için takvim -->
         <div class="calendar">
           <h3>Takvim</h3>
