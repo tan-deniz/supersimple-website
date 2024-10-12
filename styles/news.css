@@ -1,0 +1,28 @@
+.news-section {
+    float: right;
+    width: 40%;
+    padding: 20px;
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .news-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .news-list li {
+    margin-bottom: 10px;
+  }
+  
+  .news-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .news-list a:hover {
+    text-decoration: underline;
+  }
+  

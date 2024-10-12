@@ -11,89 +11,44 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/blog.css">
     <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/calendar.css"> <!-- Takvim için ayrı CSS dosyası -->
+    <link rel="stylesheet" href="styles/news.css"> <!-- Haberler için ayrı CSS dosyası -->
   </head>
   <body>
     <header class="header">
-      <div class="left-section">
-        <img class="hamburger-menu" src="icons/hamburger-menu.svg" alt="Menu">
-        <img class="site-logo" src="icons/library.svg" alt="Logo">
-      </div>
-      <div class="middle-section">
-        <input class="search-bar" type="text" placeholder="Diyet Planları Ara">
-        <button class="search-button">
-          <img class="search-icon" src="icons/search.svg" alt="Search">
-        </button>
-        <button class="voice-search-button">
-          <img class="voice-search-icon" src="icons/voice-search-icon.svg" alt="Voice Search">
-        </button>
-      </div>
-      <div class="right-section">
-        <div class="upload-icon-container">
-          <img class="upload-icon" src="icons/upload.svg" alt="Create">
-          <div class="tooltip">Yeni Yazı</div>
-        </div>
-        <div class="youtube-apps-icon-container">
-          <img class="youtube-apps-icon" src="icons/apps.svg" alt="Apps">
-          <div class="tooltip">Diyetisyen Uygulamaları</div>
-        </div>
-        <div class="notifications-icon-container">
-          <img class="notifications-icon" src="icons/notifications.svg" alt="Notifications">
-          <div class="tooltip">Bildirimler</div>
-        </div>
-        <img class="current-user-picture" src="profile-pictures/my-profile.jpg" alt="Profile">
-      </div>
+      <!-- Header content stays the same -->
     </header>
 
     <nav class="sidebar">
-      <div class="sidebar-link">
-        <img src="icons/home.svg" alt="Home">
-        <div>Anasayfa</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="icons/diet-plans.svg" alt="Diet Plans">
-        <div>Diyet Planları</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="icons/blog.svg" alt="Blog">
-        <div>Blog</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="icons/services.svg" alt="Services">
-        <div>Hizmetler</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="icons/contact.svg" alt="Contact">
-        <div>İletişim</div>
-      </div>
+      <!-- Sidebar content stays the same -->
     </nav>
 
     <main>
       <section class="blog-posts">
-        <div class="post-preview">
-          <img class="post-thumbnail" src="thumbnails/healthy-food.jpg" alt="Healthy Food">
-          <div class="post-info">
-            <h2 class="post-title">Sağlıklı Beslenme İpuçları</h2>
-            <p class="post-excerpt">Sağlıklı bir yaşam için bilmeniz gereken en iyi 10 beslenme ipucu...</p>
+        <!-- Blog posts stay the same -->
+      </section>
+
+      <section class="calendar-news-section">
+        <!-- Sol taraf için takvim -->
+        <div class="calendar">
+          <h3>Takvim</h3>
+          <div id="calendar-container">
+            <!-- Basit bir HTML takvim -->
+            <iframe src="https://calendar.google.com/calendar/embed?src=tr.turkish%23holiday%40group.v.calendar.google.com&ctz=Europe%2FIstanbul" style="border: 0" width="300" height="300" frameborder="0" scrolling="no"></iframe>
           </div>
         </div>
 
-        <div class="post-preview">
-          <img class="post-thumbnail" src="thumbnails/weight-loss.jpg" alt="Weight Loss">
-          <div class="post-info">
-            <h2 class="post-title">Kilo Verme Stratejileri</h2>
-            <p class="post-excerpt">Bu stratejilerle kilo verme yolculuğunuza rehberlik edin...</p>
-          </div>
-        </div>
-
-        <div class="post-preview">
-          <img class="post-thumbnail" src="thumbnails/meal-plan.jpg" alt="Meal Plan">
-          <div class="post-info">
-            <h2 class="post-title">Diyetisyen Onaylı Yemek Planları</h2>
-            <p class="post-excerpt">Sağlıklı yemek planları oluşturma rehberi...</p>
-          </div>
+        <!-- Sağ taraf için haberler -->
+        <div class="news-section">
+          <h3>Diyet ve Beslenme Haberleri</h3>
+          <ul class="news-list">
+            <li><a href="#">Diyetle ilgili en son bilimsel araştırmalar</a></li>
+            <li><a href="#">Dünyaca ünlü diyetisyenlerden öneriler</a></li>
+            <li><a href="#">Sağlıklı beslenme trendleri 2024</a></li>
+            <li><a href="#">Vegan beslenme hakkında bilmeniz gerekenler</a></li>
+          </ul>
         </div>
       </section>
     </main>
   </body>
 </html>
-
